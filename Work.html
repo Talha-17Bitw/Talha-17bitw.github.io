@@ -57,16 +57,63 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover {
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #ffffff;
   color: #4da6ff;
 }
+
 
 .topnav a.active {
   background-color: #ffffff;
   color: #4da6ff;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
+
 
 
 
@@ -76,8 +123,18 @@ body {
   <a href="Skills.html">Skills</a>
   <a class="active" href="Work.html">Work</a>
   <a href="contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Feedback form.html">1.Feedback Form</a>
+      <a href="Validation form.html">2.Validation Form</a>
+    </div>
+  </div> 
   
 </div>
+
 
 <font color="#4da6ff" size="7">
   <h1><center><u> My Work! </u></center></h1>
